@@ -1,4 +1,76 @@
 body {
     margin: 0;
     background-color: #1C1C1C;
+    text-align: center;
+}
+
+.inter-h1 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  font-size: 28px;
+}
+
+#header-container {
+  background-color: #6943FF;
+  width: 550px;
+  height: 285px;
+  margin: 125px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#unit-num {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 58px;
+  width: 120px;
+  height: 85px;
+  background-color: #6943FF;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px #000000;
+}
+
+#convert-btn {
+  width: 120px;
+  height: 42px;
+  background-color: white;
+  color: #3D3D3D;
+  border: 0px;
+  border-radius: 5px;
+  margin: 0 auto 35px auto;
+  font-size: medium;
+}
+
+#output-containers {
+
+}
+
+.output-container {
+
+}
+
+#length-output {
+
+}
+
+#volume-output {
+
+}
+
+#mass-output {
+
 }
