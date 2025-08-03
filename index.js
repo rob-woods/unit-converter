@@ -46,7 +46,7 @@ function convert(inputValue) {
 
 function render() {
   lengthOutput.innerHTML = `${unit} metres = ${feetOutput} feet | ${unit} feet = ${metresOutput} metres`
-  volumeOutput.innerHTML = `${unit} litres = ${gallonsOutput} gallons | ${unit} gallons = ${metresOutput} litres`
+  volumeOutput.innerHTML = `${unit} litres = ${gallonsOutput} gallons | ${unit} gallons = ${litresOutput} litres`
   massOutput.innerHTML = `${unit} kilos = ${poundsOutput} pounds | ${unit} pounds = ${kilosOutput} kilos`
 }
 
