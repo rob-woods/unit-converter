@@ -7,6 +7,8 @@
 const inputField = document.getElementById("unit-num")
 const convertBtn = document.getElementById("convert-btn")
 const lengthOutput = document.getElementById("length-output")
+const volumeOutput = document.getElementById("volume-output")
+const massOutput = document.getElementById("mass-output")
 const metreToFeet = 3.281
 const litreToGallon = 0.264
 const kiloToPound = 2.204
@@ -34,12 +36,16 @@ function imperialToMetric(inputValue, conversionRatio) {
 
 function convert(inputValue) {
   feetOutput = metricToImperial(inputValue, metreToFeet)
-  console.log(feetOutput)
   metresOutput = imperialToMetric(inputValue, metreToFeet)
-  console.log(metresOutput)
+  gallonsOutput = metricToImperial(inputValue, litreToGallon)
+  litresOutput = imperialToMetric(inputValue, litreToGallon)
+  poundsOutput = metricToImperial(inputValue, kiloToPound)
+  kilosOutput = imperialToMetric(inputValue, kiloToPound)
   render()
 }
 
 function render() {
   lengthOutput.innerHTML = `${unit} metres = ${feetOutput} feet | ${unit} feet = ${metresOutput} metres`
+  volumeOutput.innerHTML = `${unit} litres = ${gallonsOutput} gallons | ${unit} gallons = ${metresOutput} litres`
+  massOutput.innerHTML = `${unit} kilos = ${poundsOutput} pounds | ${unit} pounds = ${kilosOutput} kilos`
 }
