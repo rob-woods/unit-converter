@@ -49,3 +49,5 @@ function render() {
   volumeOutput.innerHTML = `${unit} litres = ${gallonsOutput} gallons | ${unit} gallons = ${metresOutput} litres`
   massOutput.innerHTML = `${unit} kilos = ${poundsOutput} pounds | ${unit} pounds = ${kilosOutput} kilos`
 }
+
+convert(unit)
